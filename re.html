@@ -1,0 +1,15 @@
+<link rel="icon" type="image/png" href="site logo.png"/>
+<script>
+  function getUrlParam(parameter, defaultValue) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(parameter) || defaultValue;
+  }
+
+  var code = getUrlParam('pg', 'na')
+  
+  if(code === "na"){
+    window.location.href = "https://wiresboy.ml"
+  }else{
+    window.location.href = "https://" + code
+  }
+</script>
